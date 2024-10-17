@@ -1,6 +1,7 @@
 {
+    "version": 2,
     "builds": [
-        { "src": "src/app/api/*.py", "use": "@now/python" },
-        { "src": "package.json", "use": "@now/next" }
+      { "src": "pages/api/*.py", "use": "@vercel/python" },
+      { "src": "pages/api/*.js", "use": "@vercel/node" }
     ]
-}
+  }
