@@ -1,3 +1,6 @@
 {
-    "redirects": [{ "source": "/", "destination": "/api" }]
+    "builds": [
+        { "src": "src/app/api/*.py", "use": "@now/python" },
+        { "src": "package.json", "use": "@now/next" }
+    ]
 }
